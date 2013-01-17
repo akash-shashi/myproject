@@ -12,7 +12,8 @@
 		<name>Sample Parent Project</name>
 		<properties>
 			<file.encoding>utf-8</file.encoding>
-			<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding> 
+			<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>         
+			<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding> 
 		</properties>
 		<build>
 			<pluginManagement>
@@ -45,7 +46,9 @@
 						<configuration>
 							<usePut>true</usePut>
 							<user>${depl.user}</user>
-							<password>${depl.password}</password>                         <slingUrl>http://${depl.host}:${depl.port}/crx/repository/crx.default</slingUrl>                         <slingUrlSuffix>/apps/hoc/install/</slingUrlSuffix>
+							<password>${depl.password}</password>                         
+							<slingUrl>http://${depl.host}:${depl.port}/crx/repository/crx.default</slingUrl>                         
+							<slingUrlSuffix>/apps/hoc/install/</slingUrlSuffix>
 						</configuration>
 					</plugin>
 					<!-- VLT plugin dependency and config -->
@@ -58,12 +61,14 @@
 							<group>Sample</group>
 							<requiresRoot>true</requiresRoot>
 							<install>true</install>
-							<verbose>true</verbose>                         <packageFile>${project.build.directory}/${project.artifactId}-${project.version}.zip</packageFile>                         <version>${project.version}</version>
+							<verbose>true</verbose>                         
+							<packageFile>${project.build.directory}/${project.artifactId}-${project.version}.zip</packageFile>                         <version>${project.version}</version>
 							<properties>
 								<acHandling>overwrite</acHandling>
 							</properties>
 								<userId>${depl.user}</userId>
-								<password>${depl.password}</password>                         <targetURL>http://${depl.host}:${depl.port}/crx/packmgr/service.jsp</targetURL>
+								<password>${depl.password}</password>                         
+								<targetURL>http://${depl.host}:${depl.port}/crx/packmgr/service.jsp</targetURL>
 						</configuration>
 					</plugin>
 				</plugins>

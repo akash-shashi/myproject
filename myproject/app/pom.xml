@@ -47,7 +47,11 @@
 					<group>Sample</group>
 					<requiresRoot>true</requiresRoot>
 					<install>true</install>
-					<verbose>true</verbose>                       <packageFile>${project.build.directory}/${project.artifactId}-${project.version}.zip</packageFile>                       <version>${project.version}</version>
+					<verbose>true</verbose>                       
+					<packageFile>
+						${project.build.directory}/${project.artifactId}-${project.version}.zip
+					</packageFile>
+					<version>${project.version}</version>
 					<properties>
 						<acHandling>overwrite</acHandling>
 						</properties>
