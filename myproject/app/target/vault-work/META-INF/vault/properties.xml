@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>Sample Application package</comment>
+<entry key="createdBy">A.Shashi.Chaurasia</entry>
+<entry key="name">app</entry>
+<entry key="acHandling">overwrite</entry>
+<entry key="created">2013-01-16T14:52:31.839+0530</entry>
+<entry key="groupId">com.day.cq5.myapp</entry>
+<entry key="version">0.0.1-SNAPSHOT</entry>
+<entry key="requiresRoot">true</entry>
+<entry key="group">Sample</entry>
+<entry key="description">Sample Application package</entry>
+<entry key="artifactId">app</entry>
+<entry key="path">/etc/packages/Sample/app.zip</entry>
+</properties>

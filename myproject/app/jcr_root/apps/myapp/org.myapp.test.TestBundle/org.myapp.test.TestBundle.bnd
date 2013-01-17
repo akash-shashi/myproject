@@ -1,0 +1,10 @@
+Export-Package: *
+Import-Package: *
+Private-Package: *
+# Include-Resource: 
+Bundle-Name: Test Bundle
+Bundle-Description: NA
+Bundle-SymbolicName: org.myapp.test.TestBundle
+Bundle-Version: 1.0.0-SNAPSHOT
+Bundle-Activator: org.myapp.test.Activator
+Bundle-ClassPath: .,app-core-0.0.1-SNAPSHOT.jar

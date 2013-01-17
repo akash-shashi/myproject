@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.day.cq5.myapp</groupId>
+	<artifactId>myproject</artifactId>
+	<packaging>pom</packaging>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>Sample Project Reactor</name>
+	<!-- settings for local deployment -->
+	<properties>
+		<depl.user>admin</depl.user>
+		<depl.password>admin</depl.password>
+		<depl.host>127.0.0.1</depl.host>
+		<depl.port>4502</depl.port>
+	</properties>
+	<repositories>
+		<repository>
+			<id>adobe-ext.hoc</id>
+			<name>Adobe External Central Repository</name>
+			<url>http://repo.adobe.com/nexus/content/groups/public</url>
+			</repository>
+		</repositories>
+		<profiles>
+			<!-- profile for deployment to shared development instance -->
+			<profile>
+				<id>devDeploy</id>
+					<activation>
+					</activation>
+					<properties>
+						<depl.user>admin</depl.user>
+						<depl.password>admin</depl.password>
+						<depl.host>127.0.0.1</depl.host>
+						<depl.port>4502</depl.port>
+					</properties>
+			</profile>
+			<!-- add additional profiles here -->
+			</profiles>
+	<modules>
+		<module>content</module>
+		<module>bundle</module>
+	</modules>
+</project>  
