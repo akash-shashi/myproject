@@ -17,7 +17,9 @@ public class HelloPerson {
 	public HelloPerson(Page personPage) {
 		this.personPage = personPage;
 	}
-	
+	/**
+	 * This is hello message method.
+	 */
 	public String getHelloMessage() {
 		String personName = "";
 		if(personPage.getProperties().get(PN_PERSON_NAME) != null){
